@@ -131,9 +131,16 @@ article {
 .maintitle {
     font-size: 26px;
 }
+/* =====main-container===== */
+
+.main-container {
+    width: 1000px;
+    margin: 50px auto 0 auto;
+    border-bottom: solid 2px #000;
+}
 .sns-icon {
-    margin: 0 300px 0 600px;
-    width: 488px;
+    margin:0 128px 0 200px;
+    
     height: 40px;
     list-style-type: none;
     text-align: right;
@@ -152,14 +159,6 @@ article {
 .sns-icon img{
     width: 25px;
     height: 25px;
-}
-
-/* =====main-container===== */
-
-.main-container {
-    width: 1000px;
-    margin: 50px auto 0 auto;
-    border-bottom: solid 2px #000;
 }
 .strategy {
     padding-left: 80px;
