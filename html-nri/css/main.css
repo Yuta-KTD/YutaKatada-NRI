@@ -22,9 +22,10 @@ img {
     position: fixed;
     width: 100%;
     box-sizing: border-box;
-    height: 60px;
+    height: 66px;
     background: #fff;
     padding-bottom: 22px;
+    z-index: 2;
 }
 @media screen and (max-width:1280px) {
     .header-nav1 li{
@@ -40,47 +41,50 @@ h1 {
 }
 .logomark {
     width: auto;
-    height: 80px;
-    padding-left: 24px;
+    height: 79px;
+    padding: 2px 0 0 27px;
     margin: 0;
 }
 .header-nav1 {
     color: #000;
     display: flex;
-    width: 1000px;
+    width: 1200px;
     list-style-type: none;
-    height: 60px;
     margin-left: 100px;
-    
-    padding-top: 60px;
+    font-weight: bold;
     justify-content: flex-end;
 }
 .header-nav1 li {
     width: auto;
-    margin-right: 14px;
+    margin-right: 10px;
 }
 .header-nav1 a {
     font-size: 14px;
     color: #000;
-    font-weight: bold;
-    
     text-decoration: none;
 }
 .header-nav2 {
-    width : 172px;
-    height: 58px;
-    list-style-type: none;
+    min-width: 190px;
+}
+ul .header-nav2{
     display: flex;
-    margin: 60px 0 0 30px;
-    
 }
 .header-nav2 li {
-    width: 56px;
-    height: 60px;
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 0 0 30px;
+    vertical-align: middle;
+    justify-content: flex-end;
 }
+    
 .header-nav2 img {
     width: 20px;
     height: 20px;
+}
+
+.hamberger img{
+    width: 25px;
+    height: 40px;
 }
 
 /*  ===== article ===== */
@@ -89,10 +93,12 @@ article {
 }
 /*  breadcrumb */
 .breadcrumb  {
-    padding-left: 30px;
+    padding-left: 34px;
 }
 .breadcrumb li {
     display: inline;
+    position: relative;
+    z-index: 1;
 }
 .breadcrumb a {
     padding: 0 3px 0 3px;
@@ -103,7 +109,10 @@ article {
 .breadcrumb li::after {
     content: ">";
     font-size: 11px;
-    color: #999;
+    color: #000;
+    position: absolute;
+    top: 3px;
+    left: auto;
 }
 .breadcrumb li:last-child::after {
     content: none;
@@ -120,7 +129,7 @@ article {
     padding: 50px 80px 0 80px;
     background-image: url(../images/storong-key.jpg);
     background-repeat: no-repeat;
-    height: 200px;
+    height: 250px;
     color: #fff;
 }
 .subtitle {
@@ -207,6 +216,8 @@ article {
     text-decoration: none;
     text-align: center;
     padding: 20px 25px;
+    position: relative;
+    z-index: 1;
 }
 .dx-pdf :hover {
     opacity: 0.5
@@ -215,6 +226,9 @@ a[target="_blank"] ::before {
     content: ">";
     font-size: 11px;
     padding: 30px 0;
+    position: absolute;
+    top: 4px;
+    left: 12px;
 }
 .dx-pdf p {
     font-size: 15px;
@@ -229,22 +243,31 @@ a[target="_blank"] ::before {
 .page-change1 {
     padding-left: 80px;
     color: #3a79b1;
+    position: relative;
+    text-indent: 4px;
+    z-index: 1;
 }
 .page-change1::before {
     content: "<";
     font-size: 13px;
     color: #000;
-    vertical-align: top;
+    position: absolute;
+    left:72px;
+    top:1px;
 }
 .page-change2 {
-    padding-right: 126px;
+    padding-right: 134px;
     color: #3a79b1;
+    position: relative;
+    z-index: 1;
 }
 .page-change2::after {
     content: ">";
     font-size: 13px;
     color: #000;
-    vertical-align: middle;
+    position: absolute;
+    right:124px;
+    top:1px;
 }
 /* /page-changes */
 /* NRI-strongpoint */
@@ -252,7 +275,7 @@ a[target="_blank"] ::before {
     width: 760px;
     margin: 40px 54px 20px 80px;
     padding: 28px 16px 40px 20px;
-    background: #bcd1e2;
+    background: #dbe6f3;
 
 }
 h3 {
@@ -268,13 +291,18 @@ h3 {
     justify-content: center;
     text-align: center;
     width: 200px;
-    color: #0e63ad;
+    color: #0c419a;
+    position: relative;
+    z-index: 1;
 }
 .link-strong::before {
     content: ">";
-    font-size: 13px;
+    font-size: 11px;
     color: #000;
     vertical-align: middle;
+    position: absolute;
+    top: 16px;
+    left: 4px;
 }
 /* /NRI-strongpoint */
 /* snsn-icon1 */
@@ -331,7 +359,7 @@ h4 {
 }
 .company-information-container  a {
     font-size: 14px;
-    color: #0e63ad;
+    color: #0c419a;
 }
 .company-information-container  li::before{
     content: ">";
@@ -348,7 +376,7 @@ h4 {
 .back-page {
     display: block;
     padding-top: 60px;
-    color: #0e63ad;
+    color: #0c419a;
 }
 .back-page::before {
     content: "<";
@@ -447,7 +475,7 @@ h4 {
 .footer-nav li::after {
     content: "|";
     font-size: 8px;
-    padding-left: 10px;
+    padding-left: 8px;
     vertical-align: middle;
     color: rgb(126, 126, 126);
 }
