@@ -424,6 +424,7 @@ h4 {
 }
 .back-page {
     color: #0c419a;
+    
 }
 
 .back-page::before {
@@ -470,11 +471,15 @@ h4 {
 }
 /* =====sitenav===== */
 .sitenav {
-    min-width: 737px;
+    
     margin: 0 auto;
-    padding: 40px 18px 0 8px;
+    padding-top: 40px;
     border-bottom: solid 1px rgb(218, 218, 218);
-
+}
+.nav-group {
+    max-width: 1280px;
+    min-width: 800px;
+    margin: 0 auto;
 }
 .nav-group1 {
     justify-content: space-around;
@@ -483,16 +488,16 @@ h4 {
 .nav1 , .nav2 {
     display: inline-block;
     box-sizing: border-box;
-    width: 24%;
+    width: 24.5%;
     margin: 0 auto 50px auto;
     vertical-align: top;
     
 }
 .nav1 p, .nav2 p {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
 }
 .nav1 p a, .nav2 p a {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     color: #000000;
 }
