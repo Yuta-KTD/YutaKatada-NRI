@@ -1,81 +1,80 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<meta name="descriprion" content="家具屋｜Home画面">
-<title>家具屋　Home</title>
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <meta name="descriprion" content="家具屋｜Home画面">
+    <title>家具屋　Home</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <header>
-    <div class="header-container">
+    <section class="header-container">
         <!--  float  -->
-    <h1 class="logo-header">
-        <img src="image/logo_header.png" srcset="image/logo_header.png 1x,
-                                                 image/logo_header@2x.png 2x"
-                                         alt="logomark-h">
-    </h1>
-    <ul class="header-nav">
-        <!--  float  -->
-        <li>HOME</li>
-        <li><a href="news/index.html">NEWS</a></li>
-        <li><a href="recruite/index.html">RECRUIT</a></li>
-        <li><a href="contact/index.html">CONTACT</a></li>
-    </ul>
-    </div>
+        <h1 class="logo-header"><img src="image/logo_header.png" srcset="image/logo_header.png 1x,
+                                                                         image/logo_header@2x.png 2x"
+                                     alt="logomark-h">
+        </h1>
+        <ul class="header-nav">
+            <!--  float  -->
+            <li>HOME</li>
+            <li><a href="news/index.html">NEWS</a></li>
+            <li><a href="recruite/index.html">RECRUIT</a></li>
+            <li><a href="contact/index.html">CONTACT</a></li>
+        </ul>
+    </section>
 </header>
 <main>
     <section class="keyvisual">
-            <!--  background-image  -->
-            <h2>We propose a life.</h2>
+        <!--  background-image  -->
+        <h2>We propose a life.</h2>
     </section>
-    <section class="main-container">
-            <div class="concept">
-                <!--  float  -->
-                <img src="image/concept.png" srcset="image/concept.png 1x,
-                                                     image/concept@2x.png 2x"
-                                             alt="conceptimg">
-                <h3>暮らしを提案する。</h3>
-                <p>私たちは、家具を売るのではなく、お客様の理想とする <br>
-                    「暮らし」を提案します。 <br>
-                    仕事で疲れた後に帰りたくなる、 <br>
-                    今日も１日頑張ろうと思える、 <br>
-                    そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。
-                </p>
-            </div>
-            <div class="news">
-                <h3>NEWS</h3>
-                <ul class="pickup-news">
+    <div class="main-container">
+        <section class="concept">
+            <!--  float  -->
+            <img src="image/concept.png" srcset="image/concept.png 1x,
+                                                 image/concept@2x.png 2x"
+                                         alt="conceptimg">
+            <h3>暮らしを提案する。</h3>
+            <p>私たちは、家具を売るのではなく、お客様の理想とする <br>
+                「暮らし」を提案します。 <br>
+                仕事で疲れた後に帰りたくなる、 <br>
+                今日も１日頑張ろうと思える、 <br>
+                そんな空間をお客様と一緒に作り上げていくのが私たちの仕事です。
+            </p>
+        </section>
+        <section class="news">
+            <h3>NEWS</h3>
+            <ul class="pickup-news">
                     <!--  backgroud-image,float  -->
                     <li class="news1">アームストロングのカウチ入荷</li>
                     <li class="news2">アームストロングのチェア再入荷</li>
                     <li class="news3">アームストロングのテーブル入荷</li>
                 </ul>
                 <a href="news/index.html">view more</a>
-            </div>
+            </section>
             <div class="catalog">
                 <h3>公式カタログ</h3>
                 <p>様々なスタイルをご提案いたします。オーダーメイドも可能です。 </p>
                 <p>詳しくはカタログをご覧ください。</p>
                 <a href="catalog/catalog.pdf">カタログをダウンロード</a>
             </div>
-            <div class="contact">
-                <h3>CONTACT</h3>
-                <form action="#" method="POST" id="contact-form">
-                    <p><input type="text" value="" placeholder="お名前"></p>
-                    <p><input type="email" value="" placeholder="メールアドレス"></p>
-                    <p><textarea  placeholder="お問い合わせ内容"></textarea></p>
-                    <p class="submit-p"><input type="submit" value="SEND" id="submit" name="submit"></p>
-                </form>
-            </div>
-            <div class="recruit">
-                <h3>RECRUIT</h3>
-                <p>現在Staffを募集しております。</p>
-                <p>詳しくは詳細ページをご覧ください。</p>
-                <a href="ricruite/index.html">view more</a>
-            </div>
-    </section>
+        <section class="contact">
+            <h3>CONTACT</h3>
+            <form action="#" method="POST" id="contact-form">
+                <p><input type="text" placeholder="お名前"></p>
+                <p><input type="email" placeholder="メールアドレス"></p>
+                <p><textarea  placeholder="お問い合わせ内容"></textarea></p>
+                <p class="submit-p"><input type="submit" value="SEND" id="submit" name="submit"></p>
+            </form>
+        </section>
+        <section class="recruit">
+            <h3>RECRUIT</h3>
+            <p>現在Staffを募集しております。</p>
+            <p>詳しくは詳細ページをご覧ください。</p>
+            <a href="ricruite/index.html">view more</a>
+        </section>
+    </div>
 </main>
 <footer>
     <div class="footer-container">
@@ -83,8 +82,8 @@
             <!--  float  -->
             <div class="logo-footer">
                 <img src="image/logo_footer.png" srcset="image/logo_footer.png 1x,
-                                                     image/logo_footer@2x.png 2x"
-                                         alt="logomark-f">
+                                                         image/logo_footer@2x.png 2x"
+                                                 alt="logomark-f">
             </div>
             <ul class="footer-nav">
                 <!--  float  -->
@@ -96,7 +95,7 @@
         </div>
     </div>
     <div class="copyright">
-        <p>©HTMLCSS.code</p>
+        <small>©HTMLCSS.code</small>
     </div>
 </footer>
 </body>
