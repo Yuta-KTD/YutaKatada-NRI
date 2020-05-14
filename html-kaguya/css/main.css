@@ -10,13 +10,14 @@ html, body, p, ul, ol, h1, h2, h3, h4, div, a{
     font-family: 'Noto Sans', sans-serif;
 }
 body {
-    width: 1280px;
+    width: 100%;
+    min-width: 1280px;
     background-color: #FCFCFC;
 }
 /* ===== header ===== */
 header {
     width: 100%;
-    max-width: 1280px;
+    min-width: 325px;
     position: fixed;
     z-index: 2;
     height: 56px;
@@ -38,19 +39,30 @@ h1 {
     text-decoration: none;
     color: #3B3B3B;
     padding-left: 56px;
+    letter-spacing: 0px;
 }
 .header-nav a {
     color: #B2B2B2;
     font-size: 16px;
 }
 
+/* ===========Home=========== */
+
 /* ====main==== */
 /* ===keyvisual=== */
 .keyvisual {
     padding-top: 56px;
+    background: url(../image/home_top.png) no-repeat left 0 top 56px;
     height: 744px;
-    background: url(../image/home_top.png) no-repeat;
 }
+@media only screen and (-webkit-min-device-pixel-ratio:2.0),
+                       (min-resolution: 2dppx) {
+    /*2倍の画像を指定*/
+        .keyvisual {
+            background: url(../image/home_top@2x.png) no-repeat left 0 top 56px;
+            background-size: 100% auto;
+        }
+    }
 .keyconcept {
     margin-top: 274px;
     width: 609px;
@@ -63,6 +75,8 @@ h1 {
     font-size: 53px;
     font-weight: normal;
     color: #918F89;
+    
+    letter-spacing: 2.65px;
 }
 /* ===/keyvisual=== */
 
@@ -73,6 +87,7 @@ h1 {
 /* ==concept== */
 .concept {
     display: flex;
+    justify-content: space-around;
 }
 .concept img {
     width: 560px;
@@ -83,14 +98,16 @@ h1 {
 }
 .concept-contents h3 {
     font-size: 25px;
+    letter-spacing: 2.5px;
     margin-bottom: 71px;
     color: #3B3B3B;
     font-weight: 100;
 }
 .concept-contents p {
     font-size: 12px;
+    letter-spacing: 0.36px;
     color: #3B3B3B;
-    width: 381px;
+    width: auto;
     height: 134px;
     line-height: 30px;
 }
@@ -104,6 +121,7 @@ h1 {
 }
 .news h3 {
     font-size: 23px;
+    letter-spacing: 2.3px;
     font-weight: normal;
     color: #3B3B3B;
     padding-bottom: 43px;
@@ -112,6 +130,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
+    padding-bottom: 39px;
 }
 .pickup-news li {
     width: 320px;
@@ -127,6 +146,7 @@ h1 {
 .news1 p, .news2 p, .news3 p {
     font-size: 17px;
     color: #fff;
+    letter-spacing: -0.85px;
     position: relative;
     z-index: 1;
     letter-spacing: 0.85px;
@@ -157,16 +177,15 @@ h1 {
 }
 .news a {
     font-size: 18px;
-    color: #B2B2B2;
-    position: absolute;
-    bottom: 0;
-    left: 510px
+    letter-spacing: 0.9px;
+    color: #3B3B3B;
+    opacity: 0.3;
 }
 .news a::after {
     content: ">";
     padding-left: 6px;
     font-size: 18px;
-    color: #919191;
+    color: #3B3B3B;
     opacity: 0.3;
 }
 /* ==/news== */
@@ -179,9 +198,11 @@ h1 {
     font-size: 24px;
     font-weight: normal;
     padding-bottom: 48px;
+    letter-spacing: 2.4px;
 }
 .catalog p {
     font-size: 15px;
+    letter-spacing: 0.45px;
     line-height: 30px;
     margin-bottom: 59px;
     box-sizing: border-box;
@@ -193,6 +214,7 @@ h1 {
     border-radius: 40px;
     padding: 19px 64px;
     font-size: 18px;
+    letter-spacing: 1.8px;
     color: #707070;
     box-sizing: border-box;
 }
@@ -208,25 +230,32 @@ h1 {
 }
 .contact h3 {
     font-size: 24px;
+    letter-spacing: 2.4px;
     font-weight: normal;
     padding-bottom: 47px;
-}
-.contact-form p {
-    color: #3B3B3B;
-    opacity: 0.4;
 }
 input[type="text"], input[type="email"] {
     width: 454px;
     height: 32px;
     margin-bottom: 24px;
+    background-color: #fff;
+    font-size: 12px;
     border: solid 1px #707070;
     border-radius: 16px;
     opacity: 0.6;
+}
+::placeholder {
+    font-size: 12px;
+    padding: 10px 0 0 12px;
+    letter-spacing: 0.6px;
+    color: #3B3B3B;
+    opacity: 0.4;
 }
 textarea {
     width: 454px;
     height: 200px;
     margin-bottom: 40px;
+    background-color: #fff;
     border: solid 1px #707070;
     border-radius: 16px;
     opacity: 0.6;
@@ -237,6 +266,7 @@ input[type="submit"] {
     background: #D1D1D1;
     border-radius: 16px;
     font-size: 14px;
+    letter-spacing: 1.4px;
     color: #707070;
 }
 input[type="submit"]:hover {
@@ -251,18 +281,21 @@ input[type="submit"]:hover {
 }
 .recruit h3 {
     font-size: 24px;
+    letter-spacing: 2.4px;
     color: #3B3B3B;
     font-weight: normal;
     margin-bottom: 48px;
 }
 .recruit p {
     font-size: 15px;
+    letter-spacing: 0.45px;
     color: #3B3B3B;
     line-height: 30px;
     padding-bottom: 39px;
 }
 .recruit a {
     font-size: 18px;
+    letter-spacing: 0.9px;
     color: #3B3B3B;
     opacity: 0.3;
 }
@@ -270,10 +303,15 @@ input[type="submit"]:hover {
     content: ">";
     padding-left: 6px;
     font-size: 18px;
-    color: #919191;
+    color: #3B3B3B;
     opacity: 0.3;
 }
+/* ==/recruit== */
+/* ====/main==== */
+/* ====footer==== */
 footer {
+    width: 100%;
+    min-width: 325px;
     height: 240px;
     background-color: #918F89;
     color: #fff;
@@ -289,12 +327,21 @@ footer {
     list-style-type: none;
     display: flex;
 }
+.footer-nav li {
+    font-size: 18px;
+    letter-spacing: 0;
+}
 .footer-nav a {
     padding-left: 32px;
+    font-size: 18px;
     text-decoration: none;
     color: #fff;
 }
 .copyright {
     text-align: center;
     padding-top: 41px;
+    letter-spacing: 0.44px;
 }
+/* ====/footer==== */
+/* ===========/Home=========== */
+
