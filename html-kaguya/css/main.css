@@ -17,7 +17,7 @@ body {
 /* ===== header ===== */
 header {
     width: 100%;
-    max-width: 1280px;
+    width: 1280px;
     position: fixed;
     left: 0;
     right: 0;
@@ -54,17 +54,17 @@ h1 img{
 /* ====main==== */
 /* ===keyvisual=== */
 .keyvisual {
-    padding-top: 114px;
+    padding-top: 56px;
+}
+.keyvisual-background {
     background: url(../image/home_top.png) no-repeat left 0 top 0;
-    height: 744px;
     background-position: center;
+    height: 744px;
 }
 .keyconcept {
-    margin-top: 274px;
+    padding-top: 274px;
     width: 609px;
     height: 137px;
-    background: #fff;
-    opacity: 0.8;
 }
 .keyvisual h2 {
     padding: 32px 0 32px 88px;
@@ -72,6 +72,7 @@ h1 img{
     font-weight: normal;
     color: #918F89;
     letter-spacing: 2.65px;
+    background: rgba(255,255,255,0.8);
 }
 /* ===/keyvisual=== */
 
@@ -82,11 +83,11 @@ h1 img{
 /* ==concept== */
 .concept {
     display: flex;
-    justify-content: space-around;
 }
 .concept img {
     width: 560px;
     height: 560px;
+    margin-left: 58px;
 }
 .concept-contents {
     padding: 240px 0 90px 56px;
@@ -122,8 +123,10 @@ h1 img{
     padding-bottom: 43px;
 }
 .pickup-news {
+    width: 1088px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style-type: none;
     padding-bottom: 39px;
 }
@@ -220,7 +223,7 @@ h1 img{
 /* ==/catalog== */
 /* ==contact== */
 .contact {
-    margin-top: 240px;
+    margin-top: 259px;
     text-align: center;
 }
 .contact h3 {
@@ -335,6 +338,7 @@ footer {
 }
 .copyright {
     text-align: center;
+    font-size: 11px;
     padding-top: 41px;
     letter-spacing: 0.44px;
 }
