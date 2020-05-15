@@ -54,8 +54,8 @@ h1 img{
 /* ====main==== */
 /* ===keyvisual=== */
 .keyvisual {
-    padding-top: 56px;
-    background: url(../image/home_top.png) no-repeat left 0 top 56px;
+    padding-top: 114px;
+    background: url(../image/home_top.png) no-repeat left 0 top 0;
     height: 744px;
     background-position: center;
 }
