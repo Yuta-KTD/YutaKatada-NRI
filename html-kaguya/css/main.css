@@ -52,6 +52,10 @@ h1 img{
 /* ===========Home=========== */
 
 /* ====main==== */
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
 /* ===keyvisual=== */
 .keyvisual {
     padding-top: 56px;
@@ -87,7 +91,6 @@ h1 img{
 .concept img {
     width: 560px;
     height: 560px;
-    margin-left: 58px;
 }
 .concept-contents {
     padding: 240px 0 90px 56px;
