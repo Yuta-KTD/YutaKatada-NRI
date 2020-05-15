@@ -5,20 +5,23 @@
 html, body, p, ul, ol, h1, h2, h3, h4, div, a{
     margin: 0;
     padding: 0;
-    font-size: 1rem;
     text-decoration: none;
     font-family: 'Noto Sans', sans-serif;
 }
 body {
     width: 100%;
     min-width: 1280px;
+    margin: 0 auto;
     background-color: #FCFCFC;
 }
 /* ===== header ===== */
 header {
     width: 100%;
-    min-width: 325px;
+    max-width: 1280px;
     position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
     z-index: 2;
     height: 56px;
     background: #fff;
@@ -27,8 +30,8 @@ header {
     display: flex;
     justify-content: space-between;
 }
-h1 {
-    margin: 16px 0 0 96px;
+h1 img{
+    padding: 16px 0 16px 96px;
 }
 .header-nav {
     margin: 26px 96px 0 0;
@@ -54,15 +57,8 @@ h1 {
     padding-top: 56px;
     background: url(../image/home_top.png) no-repeat left 0 top 56px;
     height: 744px;
+    background-position: center;
 }
-@media only screen and (-webkit-min-device-pixel-ratio:2.0),
-                       (min-resolution: 2dppx) {
-    /*2倍の画像を指定*/
-        .keyvisual {
-            background: url(../image/home_top@2x.png) no-repeat left 0 top 56px;
-            background-size: 100% auto;
-        }
-    }
 .keyconcept {
     margin-top: 274px;
     width: 609px;
@@ -75,7 +71,6 @@ h1 {
     font-size: 53px;
     font-weight: normal;
     color: #918F89;
-    
     letter-spacing: 2.65px;
 }
 /* ===/keyvisual=== */
@@ -310,8 +305,9 @@ input[type="submit"]:hover {
 /* ====/main==== */
 /* ====footer==== */
 footer {
-    width: 100%;
+    max-width: 1280px;
     min-width: 325px;
+    margin: 0 auto;
     height: 240px;
     background-color: #918F89;
     color: #fff;
