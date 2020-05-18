@@ -150,6 +150,7 @@ main {
     letter-spacing: -0.85px;
     position: relative;
     z-index: 1;
+    text-shadow: 0 0 6px #000000E0;
 }
 .news2 {
     display: flex;
@@ -237,7 +238,7 @@ input[type="text"], input[type="email"] {
     width: 454px;
     height: 32px;
     margin-bottom: 24px;
-    padding-left: 12px;
+    padding: 0 12px 0 12px;
     background-color: #fff;
     font-size: 12px;
     border: solid 1px #707070;
@@ -254,8 +255,9 @@ input[type="text"]::placeholder , input[type="email"]::placeholder{
 textarea {
     width: 454px;
     height: 200px;
+    font-size: 12px;
     margin-bottom: 40px;
-    padding:10px 0 0 12px;
+    padding:10px 12px 0 12px;
     background-color: #fff;
     border: solid 1px #707070;
     border-radius: 16px;
