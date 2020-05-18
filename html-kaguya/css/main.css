@@ -270,7 +270,7 @@ textarea::placeholder {
 input[type="submit"] {
     width: 161px;
     height: 32px;
-    background: #D1D1D1;
+    background: #d1d1d1;
     border-radius: 16px;
     font-size: 14px;
     letter-spacing: 1.4px;
