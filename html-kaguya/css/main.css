@@ -12,7 +12,7 @@ body {
     width: 100%;
     min-width: 1280px;
     margin: 0 auto;
-    background-color: #FCFCFC;
+    background-color: #fcfcfc;
 }
 /* ===== header ===== */
 header {
@@ -40,12 +40,12 @@ h1 img{
 }
 .header-nav li{
     text-decoration: none;
-    color: #3B3B3B;
+    color: #3b3b3b;
     padding-left: 56px;
     letter-spacing: 0px;
 }
 .header-nav a {
-    color: #B2B2B2;
+    color: #b2b2b2;
     font-size: 16px;
 }
 
@@ -74,7 +74,7 @@ main {
     padding: 32px 0 32px 88px;
     font-size: 53px;
     font-weight: normal;
-    color: #918F89;
+    color: #918f89;
     letter-spacing: 2.65px;
     background: rgba(255,255,255,0.8);
 }
@@ -99,13 +99,13 @@ main {
     font-size: 25px;
     letter-spacing: 2.5px;
     margin-bottom: 71px;
-    color: #3B3B3B;
+    color: #3b3b3b;
     font-weight: 100;
 }
 .concept-contents p {
     font-size: 12px;
     letter-spacing: 0.36px;
-    color: #3B3B3B;
+    color: #3b3b3b;
     width: auto;
     height: 134px;
     line-height: 30px;
@@ -122,7 +122,7 @@ main {
     font-size: 23px;
     letter-spacing: 2.3px;
     font-weight: normal;
-    color: #3B3B3B;
+    color: #3b3b3b;
     padding-bottom: 43px;
 }
 .pickup-news {
@@ -150,7 +150,6 @@ main {
     letter-spacing: -0.85px;
     position: relative;
     z-index: 1;
-    letter-spacing: 0.85px;
 }
 .news2 {
     display: flex;
@@ -160,11 +159,11 @@ main {
     position: relative;
 }
 .news3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: url(../image/news03.png) no-repeat;
-        position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../image/news03.png) no-repeat;
+    position: relative;
 }
 .news1::before, .news2::before, .news3::before {
     content: "";
@@ -179,14 +178,13 @@ main {
 .news a {
     font-size: 18px;
     letter-spacing: 0.9px;
-    color: #3B3B3B;
+    color: #3b3b3b;
     opacity: 0.3;
 }
 .news a::after {
     content: ">";
     padding-left: 6px;
     font-size: 18px;
-    color: #3B3B3B;
     opacity: 0.3;
 }
 /* ==/news== */
@@ -211,7 +209,7 @@ main {
 .catalog a {
     width: 344px;
     height: 56px;
-    background-color: #D1D1D1;
+    background-color: #d1d1d1;
     border-radius: 40px;
     padding: 19px 64px;
     font-size: 18px;
@@ -239,27 +237,35 @@ input[type="text"], input[type="email"] {
     width: 454px;
     height: 32px;
     margin-bottom: 24px;
+    padding-left: 12px;
     background-color: #fff;
     font-size: 12px;
     border: solid 1px #707070;
     border-radius: 16px;
     opacity: 0.6;
 }
-::placeholder {
+input[type="text"]::placeholder , input[type="email"]::placeholder{
     font-size: 12px;
-    padding: 10px 0 0 12px;
+    padding-top: 10px;
     letter-spacing: 0.6px;
-    color: #3B3B3B;
+    color: #3b3b3b;
     opacity: 0.4;
 }
 textarea {
     width: 454px;
     height: 200px;
     margin-bottom: 40px;
+    padding:10px 0 0 12px;
     background-color: #fff;
     border: solid 1px #707070;
     border-radius: 16px;
     opacity: 0.6;
+}
+textarea::placeholder {
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    color: #3b3b3b;
+    opacity: 0.4;
 }
 input[type="submit"] {
     width: 161px;
@@ -283,28 +289,28 @@ input[type="submit"]:hover {
 .recruit h3 {
     font-size: 24px;
     letter-spacing: 2.4px;
-    color: #3B3B3B;
+    color: #3b3b3b;
     font-weight: normal;
     margin-bottom: 48px;
 }
 .recruit p {
     font-size: 15px;
     letter-spacing: 0.45px;
-    color: #3B3B3B;
+    color: #3b3b3b;
     line-height: 30px;
     padding-bottom: 39px;
 }
 .recruit a {
     font-size: 18px;
     letter-spacing: 0.9px;
-    color: #3B3B3B;
+    color: #3b3b3b;
     opacity: 0.3;
 }
 .recruit a::after {
     content: ">";
     padding-left: 6px;
     font-size: 18px;
-    color: #3B3B3B;
+    color: #3b3b3b;
     opacity: 0.3;
 }
 /* ==/recruit== */
@@ -315,7 +321,7 @@ footer {
     min-width: 325px;
     margin: 0 auto;
     height: 240px;
-    background-color: #918F89;
+    background-color: #918f89;
     color: #fff;
 }
 .footer-container {
