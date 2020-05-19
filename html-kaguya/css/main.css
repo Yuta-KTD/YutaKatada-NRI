@@ -16,8 +16,7 @@ body {
 }
 /* ===== header ===== */
 header {
-    width: 100%;
-    width: 1280px;
+    max-width: 1280px;
     position: fixed;
     left: 0;
     right: 0;
@@ -43,10 +42,13 @@ h1 img{
     color: #3b3b3b;
     padding-left: 56px;
     letter-spacing: 0px;
+    font-size: 16px;
 }
 .header-nav a {
     color: #b2b2b2;
     font-size: 16px;
+    letter-spacing: 0px;
+
 }
 
 /* ===========Home=========== */
@@ -100,7 +102,7 @@ main {
     letter-spacing: 2.5px;
     margin-bottom: 71px;
     color: #3b3b3b;
-    font-weight: 100;
+    font-weight: normal;
 }
 .concept-contents p {
     font-size: 12px;
@@ -150,7 +152,7 @@ main {
     letter-spacing: -0.85px;
     position: relative;
     z-index: 1;
-    text-shadow: 0 0 6px #000000E0;
+    text-shadow: 0 0 6px #000000e0;
 }
 .news2 {
     display: flex;
@@ -238,19 +240,12 @@ input[type="text"], input[type="email"] {
     width: 454px;
     height: 32px;
     margin-bottom: 24px;
-    padding: 0 12px 0 12px;
+    padding: 0 12px;
     background-color: #fff;
     font-size: 12px;
     border: solid 1px #707070;
     border-radius: 16px;
     opacity: 0.6;
-}
-input[type="text"]::placeholder , input[type="email"]::placeholder{
-    font-size: 12px;
-    padding-top: 10px;
-    letter-spacing: 0.6px;
-    color: #3b3b3b;
-    opacity: 0.4;
 }
 textarea {
     width: 454px;
@@ -263,7 +258,7 @@ textarea {
     border-radius: 16px;
     opacity: 0.6;
 }
-textarea::placeholder {
+::placeholder {
     font-size: 12px;
     letter-spacing: 0.6px;
     color: #3b3b3b;
@@ -320,7 +315,6 @@ input[type="submit"]:hover {
 /* ====footer==== */
 footer {
     max-width: 1280px;
-    min-width: 325px;
     margin: 0 auto;
     height: 240px;
     background-color: #918f89;
@@ -341,8 +335,10 @@ footer {
     font-size: 18px;
     letter-spacing: 0;
 }
-.footer-nav a {
+.padleft-nav {
     padding-left: 32px;
+}
+.footer-nav a {
     font-size: 18px;
     text-decoration: none;
     color: #fff;
@@ -355,4 +351,142 @@ footer {
 }
 /* ====/footer==== */
 /* ===========/Home=========== */
+
+/* ===========News=========== */
+/* =====n-keyvisual===== */
+.nrc-keyvisual {
+    padding-top: 56px;
+    margin: 0 auto;
+}
+.n-keyvisual-background {
+    background: url(../image/news_top.png) no-repeat left 0 top 0;
+    background-position: center;
+    height: 456px;
+}
+.nrc-keyvisual h2 {
+    padding: 191px 0 0 228px;
+    font-size: 30px;
+    font-weight: normal;
+    color: #918f89;
+    letter-spacing: 3px;
+}
+/* =====/n-keyvisual===== */
+/* =====news-topics===== */
+.news-topics {
+    height: 400px;
+    margin-top: 160px;
+    text-align: center;
+}
+.news-topics h3 {
+    font-size: 23px;
+    letter-spacing: 2.3px;
+    font-weight: normal;
+    color: #3b3b3b;
+    padding-bottom: 56px;
+}
+/* ===========News=========== */
+
+/* ===========Recruit=========== */
+/* =====keyvisual===== */
+.r-keyvisual-background {
+    background: url(../image/recruit_top.png) no-repeat left 0 top 0;
+    background-position: center;
+    height: 456px;
+}
+/* =====/keyvisual===== */
+/* =====r-main-container===== */
+.r-main-container {
+    width: 640px;
+    margin: 161px auto 320px auto;
+    text-align: center;
+}
+.recruit-information {
+    width: 640px;
+    border-collapse: collapse;
+    border-radius: 4px;
+    
+}
+.recruit-information caption {
+    font-size: 23px;
+    letter-spacing: 2.3px;
+    padding-bottom: 32px;
+    color: #3b3b3b;
+}
+th,td {
+    border: 1px solid #707070;
+    letter-spacing: 0px;
+    font-weight: normal;
+}
+
+th {
+    font-size: 16px;
+    color: #3b3b3b;
+    background-color: #d1d1d1;
+    padding: 0 13.5px;
+}
+td {
+    padding: 15px 0 15px 48px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+}
+.recruit-information ul {
+    line-height: 21px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #3b3b3b;
+    list-style-type: none;
+    margin-top: 8px;
+}
+.recruit4 ul {
+    line-height: 22px;
+}
+.recruit-information li::before {
+    content: "・";
+} 
+.work-contents1 {
+    font-size: 14px;
+    margin-top: 7px;
+}
+.work-contents2 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 7px;
+}
+/* =====/r-main-container===== */
+/* ===========/Recruit=========== */
+
+/* ===========Contact=========== */
+/* ======c-keyvisual===== */
+.c-keyvisual-background {
+    background: url(../image/contact_top.png) no-repeat left 0 top 0;
+    background-position: center;
+    height: 456px;
+}
+.c-keyvisual-background h2 {
+    color: #fcfcfc;
+}
+/* =====c-main-container===== */
+
+.c-main-container {
+    text-align: center;
+    margin: 161px 0 320px 0;
+}
+.contact-title h3{
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    color: #3b3b3b;
+    padding-bottom: 40px;
+    font-weight: normal;
+}
+.contact-title p {
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    color: #3b3b3b;
+    padding-bottom: 72px;
+}
+
+/* =====/c-main-container===== */
+
+/* ===========Contact=========== */
 
