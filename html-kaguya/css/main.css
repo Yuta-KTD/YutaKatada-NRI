@@ -137,9 +137,15 @@ main {
 .main-container {
     margin: 80px 88px 320px 88px;
 }
+.n-main-container {
+    margin: 80px 88px 320px 88px;
+}
 @media screen and (max-width: 375px)  {
     .main-container {
         margin: 88px 0 240px 0;
+    }
+    .n-main-container {
+        margin: 0 auto 224px auto;
     }
 }
 /* ==concept== */
@@ -606,6 +612,28 @@ footer {
     font-weight: normal;
     color: #3b3b3b;
     padding-bottom: 56px;
+}
+@media screen and (max-width: 375px) {
+    .n-keyvisual-background {
+        background: url(../image/news_top_sp.png) no-repeat;
+        height: 648px;
+        background-position: bottom;
+    }
+    .nrc-keyvisual h2 {
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        color: #3B3B3B;
+        text-align: center;
+        padding: 200px 0 0 0;
+    }
+    .news-topics {
+        height: 970px;
+    }
+    .news-topics h3 {
+        font-size: 22px;
+        letter-spacing: 2.2px;
+        padding-bottom: 32px;
+    }
 }
 /* ===========News=========== */
 
