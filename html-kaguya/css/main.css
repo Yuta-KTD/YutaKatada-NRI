@@ -440,14 +440,17 @@ input[type="submit"]:hover {
         padding-bottom: 32px;
     }
     input[type="text"], input[type="email"] {
-        width: 286px;
+        width: 252px;
         padding: 0 17px;   
+        margin-bottom: 16px;
+        border-radius: 11px;
     }
     textarea {
-        width: 286px;
+        width: 252px;
         padding: 15px 17px 0 17px;
         letter-spacing: 0.7px;
         margin-bottom: 32px;
+        border-radius: 11px;
     }
     ::placeholder {
         font-size: 14px;
@@ -644,6 +647,13 @@ footer {
     background-position: center;
     height: 456px;
 }
+@media screen and (max-width: 375px) {
+    .r-keyvisual-background {
+        background: url(../image/recruit_top_sp.png) no-repeat;
+        height: 648px;
+        background-position: bottom;
+    }
+}
 /* =====/keyvisual===== */
 /* =====r-main-container===== */
 .r-main-container {
@@ -704,6 +714,31 @@ td {
     line-height: 20px;
     margin-top: 7px;
 }
+@media screen and (max-width: 375px) {
+    .r-main-container {
+        width: 344px;
+        margin: 161px auto 256px auto;
+        text-align: center;
+    }
+    .recruit-information {
+        width: 344px;
+    }
+    .recruit-information caption {
+        padding-bottom: 40px;
+    }
+    th {
+        font-size: 14px;
+        padding: 0 8px;
+    }
+    td {
+        padding-left: 23px;
+        font-size: 15px;
+    }
+    .recruit-information ul {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
 /* =====/r-main-container===== */
 /* ===========/Recruit=========== */
 
@@ -716,6 +751,13 @@ td {
 }
 .c-keyvisual-background h2 {
     color: #fcfcfc;
+}
+@media screen and (max-width: 375px) {
+    .c-keyvisual-background {
+        background: url(../image/contact_top_sp.png) no-repeat;
+        height: 648px;
+        background-position: bottom;
+    }
 }
 /* =====c-main-container===== */
 
@@ -736,8 +778,26 @@ td {
     color: #3b3b3b;
     padding-bottom: 72px;
 }
-
+.contact-title-sp {
+    display: none;
+}
+@media screen and (max-width: 375px) {
+    .c-main-container {
+        margin-bottom: 240px;
+    }
+    .contact-title {
+        display: none;
+    }
+    .contact-title-sp {
+        display: block;
+        padding-bottom: 32px;
+    }
+    .contact-title-sp h3{
+        font-size: 25px;
+        letter-spacing: 2.5px;
+        color: #3b3b3b;
+        font-weight: normal;
+    }
+}
 /* =====/c-main-container===== */
-
 /* ===========Contact=========== */
-
