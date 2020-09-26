@@ -1,77 +1,109 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="descriprion" content="家具屋｜contact お問い合わせ" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>家具屋 contact</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <!-- ページがフェードアウトするようにアニメーションを実装 -->
+  <!-- 参考：https://digipress.info/tech/page-transition-effect-how-to/ -->
 
-<head>
-    <meta charset="utf-8">
-    <meta name="descriprion" content="家具屋｜contact お問い合わせ">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>家具屋　contact</title>
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/main.css">
-</head>
-
-<body>
+  <body class="fadeout">
     <header>
-        <section class="header-container">
-            <!--  float  -->
-            <h1 class="logo-header">
-                <img src="../image/logo_header.png" srcset="../image/logo_header.png 1x,
-                                                            ../image/logo_header@2x.png 2x" alt="logomark-h">
-            </h1>
-            <ul class="header-nav">
-                <!--  float  -->
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="../news/index.html">NEWS</a></li>
-                <li><a href="../recruit/index.html">RECRUIT</a></li>
-                <li>CONTACT</li>
-            </ul>
-        </section>
+      <section class="header-container">
+        <!--  float  -->
+        <h1 class="logo-header">
+          <img
+            src="../image/logo_header.png"
+            srcset="../image/logo_header.png 1x, ../image/logo_header@2x.png 2x"
+            alt="logomark-h"
+          />
+        </h1>
+        <!-- ハンバーガーメニュー -->
+        <div class="navToggle">
+          <span></span><span></span><span></span>
+        </div>
+        <nav class="header-nav">
+        <ul>
+          <!--  float  -->
+          <li><a href="../index.html" class="page-transition">HOME</a></li>
+          <li><a href="../news/index.html" class="page-transition">NEWS</a></li>
+          <li>
+            <a href="../recruit/index.html" class="page-transition">RECRUIT</a>
+          </li>
+          <li><a href="index.html">CONTACT</a></li>
+        </ul>
+        </nav>
+      </section>
     </header>
     <main>
-        <section class="nrc-keyvisual">
-            <div class="c-keyvisual-background">
-            <!--  background-image  -->
-                <h2>CONTACT</h2>
-            </div>
-        </section>
-        <div class="c-main-container">
-            <section class="contact-title">
-                <h3>お問い合わせ</h3>
-                <p>オーダー家具や在庫状況のお問い合わせは下記フォームから承っております。</p>
-            </section>
-            <section class="contact-title-sp">
-                <h3>CONTACT</h3>
-            </section>
-            <form action="#" method="POST" id="contact-form">
-                <p><input type="text" placeholder="お名前"></p>
-                <p><input type="email" placeholder="メールアドレス"></p>
-                <p><textarea placeholder="お問い合わせ内容"></textarea></p>
-                <p class="submit-p"><input type="submit" value="SEND" id="submit" name="submit"></p>
-            </form>
+      <section class="nrc-keyvisual">
+        <div class="c-keyvisual-background">
+          <!--  background-image  -->
+          <h2>CONTACT</h2>
         </div>
+      </section>
+      <div class="c-main-container">
+        <section class="contact-title">
+          <h3>お問い合わせ</h3>
+          <p>
+            オーダー家具や在庫状況のお問い合わせは下記フォームから承っております。
+          </p>
+        </section>
+        <section class="contact-title-sp">
+          <h3>CONTACT</h3>
+        </section>
+        <form action="#" method="POST" id="contact-form">
+          <p><input type="text" placeholder="お名前" /></p>
+          <p><input type="email" placeholder="メールアドレス" /></p>
+          <p><textarea placeholder="お問い合わせ内容"></textarea></p>
+          <p class="submit-p">
+            <input type="submit" value="SEND" id="submit" name="submit" />
+          </p>
+        </form>
+      </div>
     </main>
     <footer>
-        <div class="footer-container">
-            <!--  float  -->
-            <div class="logo-footer">
-                <a href="../index.html">
-                    <img src="../image/logo_footer.png" srcset="../image/logo_footer.png 1x,
-                                                                ../image/logo_footer@2x.png 2x" alt="logomark-f">
-                </a>
-            </div>
-            <ul class="footer-nav">
-                <!--  float  -->
-                <li><a href="../index.html">HOME</a></li>
-                <li class="padleft-nav"><a href="../news/index.html">NEWS</a></li>
-                <li class="padleft-nav"><a href="../recruit/index.html">RECRUIT</a></li>
-                <li class="padleft-nav">CONTACT</li>
-            </ul>
+      <div class="footer-container">
+        <!--  float  -->
+        <div class="logo-footer">
+          <a href="../index.html" class="page-transition">
+            <img
+              src="../image/logo_footer.png"
+              srcset="
+                ../image/logo_footer.png    1x,
+                ../image/logo_footer@2x.png 2x
+              "
+              alt="logomark-f"
+            />
+          </a>
         </div>
-        <div class="copyright">
-            <small>©HTMLCSS.code</small>
-        </div>
+        <nav class="footer-nav">
+        <ul>
+          <!--  float  -->
+          <li><a href="../index.html" class="page-transition">HOME</a></li>
+          <li class="padleft-nav">
+            <a href="../news/index.html" class="page-transition">NEWS</a>
+          </li>
+          <li class="padleft-nav">
+            <a href="../recruit/index.html" class="page-transition">RECRUIT</a>
+          </li>
+          <li class="padleft-nav">CONTACT</li>
+        </ul>
+        </nav>
+      </div>
+      <div class="copyright">
+        <small>&copy;HTMLCSS.code</small>
+      </div>
     </footer>
-</body>
-
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/script.js"></script>
+  </body>
 </html>
