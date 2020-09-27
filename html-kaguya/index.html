@@ -26,21 +26,19 @@
         </h1>
         <!-- ハンバーガーメニュー -->
         <!-- 参考：https://nodoame.net/archives/8771 -->
-        <div class="navToggle">
-          <span></span><span></span><span></span>
-      </div>
+        <div class="navToggle"><span></span><span></span><span></span></div>
         <nav class="header-nav">
-        <ul>
-          <!--  float  -->
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="news/index.html" class="page-transition">NEWS</a></li>
-          <li>
-            <a href="recruit/index.html" class="page-transition">RECRUIT</a>
-          </li>
-          <li>
-            <a href="contact/index.html" class="page-transition">CONTACT</a>
-          </li>
-        </ul>
+          <ul>
+            <!--  float  -->
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="news/index.html" class="page-transition">NEWS</a></li>
+            <li>
+              <a href="recruit/index.html" class="page-transition">RECRUIT</a>
+            </li>
+            <li>
+              <a href="contact/index.html" class="page-transition">CONTACT</a>
+            </li>
+          </ul>
         </nav>
       </section>
     </header>
@@ -79,13 +77,17 @@
           <ul class="pickup-news">
             <!--  backgroud-image,float  -->
             <li class="news1">
-              <p><span class = "background-news">アームストロングのカウチ入荷</span></p>
+              <p>アームストロングのカウチ入荷</p>
             </li>
             <li class="news2">
-              <p><span class = "background-news">アームストロングのチェア再入荷</span></p>
+              <span class="news-background"
+                ><p>アームストロングのチェア再入荷</p></span
+              >
             </li>
             <li class="news3">
-              <span class = "background-news"><p>アームストロングのテーブル入荷</span></p>
+              <span class="news-background"
+                ><p>アームストロングのテーブル入荷</p></span
+              >
             </li>
           </ul>
           <a href="news/index.html" class="page-transition">view more</a>
@@ -100,12 +102,23 @@
         </section>
         <section class="contact">
           <h3>CONTACT</h3>
-          <form action="#" method="POST" id="contact-form">
+          <form
+            action="#"
+            method="POST"
+            id="contact-form"
+            onsubmit="return false"
+          >
             <p><input type="text" placeholder="お名前" /></p>
             <p><input type="email" placeholder="メールアドレス" /></p>
             <p><textarea placeholder="お問い合わせ内容"></textarea></p>
             <p class="submit-p">
-              <input type="submit" value="SEND" id="submit" name="submit" />
+              <input
+                type="submit"
+                value="SEND"
+                id="submit"
+                name="submit"
+                class="submit"
+              />
             </p>
           </form>
         </section>
@@ -130,19 +143,19 @@
           />
         </div>
         <nav class="footer-nav">
-        <ul>
-          <!--  float  -->
-          <li>HOME</li>
-          <li class="padleft-nav">
-            <a href="news/index.html" class="page-transition">NEWS</a>
-          </li>
-          <li class="padleft-nav">
-            <a href="recruit/index.html" class="page-transition">RECRUIT</a>
-          </li>
-          <li class="padleft-nav">
-            <a href="contact/index.html" class="page-transition">CONTACT</a>
-          </li>
-        </ul>
+          <ul>
+            <!--  float  -->
+            <li>HOME</li>
+            <li class="padleft-nav">
+              <a href="news/index.html" class="page-transition">NEWS</a>
+            </li>
+            <li class="padleft-nav">
+              <a href="recruit/index.html" class="page-transition">RECRUIT</a>
+            </li>
+            <li class="padleft-nav">
+              <a href="contact/index.html" class="page-transition">CONTACT</a>
+            </li>
+          </ul>
         </nav>
       </div>
       <div class="copyright">

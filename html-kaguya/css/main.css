@@ -111,7 +111,7 @@ h1 img {
 
   /* ハンバーガーメニュー */
   .header-container nav {
-    z-index: 1;
+    z-index: 100;
     position: fixed;
     top: 0;
     left: 0;
@@ -395,6 +395,8 @@ main {
 .pickup-news li {
   width: 320px;
   height: 320px;
+  color: #fff;
+  z-index: 3;
 }
 
 @media screen and (max-width: 375px) {
@@ -418,8 +420,10 @@ main {
   color: #fff;
   letter-spacing: -0.85px;
   position: relative;
-  z-index: 1;
+  z-index: 3;
   text-shadow: 0 0 6px #000000e0;
+  display: none;
+  padding-top: 140px;
 }
 
 .news2 {
@@ -436,7 +440,7 @@ main {
   background: url(../image/news03.png) no-repeat;
   position: relative;
 }
-/* .background-news {
+/* .news-background {
   content: "";
   background-color: #000000;
   opacity: 0.6;
@@ -453,11 +457,14 @@ main {
   content: "";
   background-color: #000000;
   opacity: 0.6;
-  position: absolute;
+  /* position: absolute;
+  bottom: 0; */
+
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
+  position: absolute;
+  bottom: 0;
 }
 .news a {
   font-size: 18px;
@@ -479,7 +486,7 @@ main {
     color: #fff;
     letter-spacing: -0.75px;
     position: relative;
-    display: none;
+    display: block;
   }
   .news1,
   .news2,
@@ -584,19 +591,32 @@ textarea {
   color: #3b3b3b;
   opacity: 0.4;
 }
-input[type="submit"] {
+.submit {
   width: 161px;
   height: 32px;
   background: #d1d1d1;
   border-radius: 16px;
+  border: 1px solid #fff;
   font-size: 14px;
   letter-spacing: 1.4px;
   color: #707070;
 }
-input[type="submit"]:hover {
+.submit:hover {
   background: #707070;
   color: #fff;
 }
+
+/* ボタンが押された後の状態 */
+/* ここから320pxまで伸ばす */
+.submit.active {
+  color: #707070;
+
+  width: 240px;
+}
+.submit.active:hover {
+  background: #d1d1d1;
+}
+
 @media screen and (max-width: 375px) {
   .contact h3 {
     padding-bottom: 32px;
@@ -618,24 +638,28 @@ input[type="submit"]:hover {
   ::placeholder {
     font-size: 14px;
   }
-  input[type="submit"] {
+  .submit {
     width: 173px;
     height: 48px;
     border-radius: 30px;
     /* SEND→Send */
-    font-size: 0;
-    position: relative;
-    right: 25px;
+    /* font-size: 0; */
   }
-  .submit-p::before {
+  .submit::before {
     font-size: 18px;
     content: "Send";
     color: #707070;
     letter-spacing: 0.9px;
     position: relative;
-    z-index: 1;
     left: 84px;
     bottom: -7px;
+  }
+  .submit.active {
+    color: #707070;
+    width: 240px;
+  }
+  .submit.active:hover {
+    background: #d1d1d1;
   }
 }
 /* ==/contact== */
