@@ -445,33 +445,10 @@ main {
   width: 320px;
   height: 320px;
   position: absolute;
-  bottom: 0;
   display: none;
   opacity: 0.6;
-  /* opacity: 0;
-  transform: translateY(20px);
-  transition: all 1s; */
 }
 
-/* .news-background.action {
-  opacity: 0.6;
-  transform: translateY(0);
-} */
-/* .news1::before,
-.news2::before,
-.news3::before {
-  content: "";
-  background-color: #000000;
-  opacity: 0.6;
-  /* position: absolute;
-  bottom: 0;
-
-  top: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  bottom: 0;
-} */
 .news a {
   font-size: 18px;
   letter-spacing: 0.9px;
@@ -506,6 +483,11 @@ main {
     color: #919191;
     opacity: 1;
     font-size: 14px;
+  }
+  .news-background {
+    width: 272px;
+    height: 272px;
+    display: block;
   }
 }
 /* ==/news== */
