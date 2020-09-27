@@ -10,59 +10,36 @@ $(window).on("load", () => {
   }
 });
 //フェードアウト動作をCSSのtransitionを用いて実装
-$(() => {
-  $(".page-transition").on("click", (e) => {
-    // preventDefaultでデフォルト動作をキャンセル
-    e.preventDefault();
-    // 遷移先のURLを取得
-    const url = $(e.currentTarget).attr("href");
-    if (url !== undefined) {
-      //bodyにclass="fadeout"を挿入
-      $("body").addClass("fadeout");
-      setTimeout(() => {
-        window.location = url;
-      }, 100);
-    }
-    return false;
-  });
+
+$(".page-transition").on("click", (e) => {
+  // preventDefaultでデフォルト動作をキャンセル
+  e.preventDefault();
+  // 遷移先のURLを取得
+  const url = $(e.currentTarget).attr("href");
+  if (url !== undefined) {
+    //bodyにclass="fadeout"を挿入
+    $("body").addClass("fadeout");
+    setTimeout(() => {
+      window.location = url;
+    }, 100);
+  }
+  return false;
 });
 
-// const stock_slideToggle = $(".news1::before,.news2::before,.news3::before,");
-// //pickup-news(入荷情報画像)スライドアニメーション
-// $(".pickup-news li").on(
-//   {
-//     mouseover: () => {
-//       stock_fadeToggle.fadeIn();
-//       stock_slideToggle.slideUp();
-//     },
-//   },
-//   {
-//     mouseout: () => {
-//       stock_fadeToggle.fadeOut();
-//       stock_slideToggle.slideDown();
-//     },
-//   }
-// );
-
-//
-
-$(".nav-toggle").on("click", () => {
-  $(".nav-toggle, .header-nav").toggleClass("show");
-});
-
-// 商品ニュース内の文字の表示
+// 商品ニュース画像ホバー時の動作
 $(".pickup-news li").on({
   mouseenter: (e) => {
-    console.log(e);
-    $(e.target).children("p").fadeIn(100);
+    $(e.currentTarget).children("p").fadeIn(100).css("display", "content");
+    $(e.currentTarget).children("div").slideDown(100);
   },
-  mouseout: (e) => {
-    $(e.target).children("p").fadeOut(100);
+  mouseleave: (e) => {
+    $(e.currentTarget).children("p").fadeOut(100);
+    $(e.currentTarget).children("div").slideUp(100);
   },
 });
 
+// ==ハンバーガーメニュー== //
 // ハンバーガーメニューのオンオフをactiveクラスの有無で判断する
-
 $(".navToggle").on("click", (e) => {
   const target = $(e.currentTarget);
   target.toggleClass("active");
@@ -73,7 +50,12 @@ $(".navToggle").on("click", (e) => {
     $(".header-container nav").removeClass("active");
   }
 });
+// メニューの表示、アイコン切り替え
+$(".nav-toggle").on("click", () => {
+  $(".nav-toggle, .header-nav").toggleClass("show");
+});
 
+// ==CONTACTフォーム== //
 //sendボタン操作後、transmission completedボタンに変更
 
 $(".submit").on("click", () => {
