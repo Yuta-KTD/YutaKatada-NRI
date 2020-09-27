@@ -955,6 +955,12 @@ td {
   text-align: center;
   margin: 161px 0 320px 0;
 }
+
+iframe {
+  width: 0;
+  height: 0;
+  border: 0;
+}
 .contact-title h3 {
   font-size: 24px;
   letter-spacing: 2.4px;
