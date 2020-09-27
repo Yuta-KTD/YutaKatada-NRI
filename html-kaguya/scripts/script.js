@@ -58,7 +58,7 @@ $(".nav-toggle").on("click", () => {
 //sendボタン操作後、transmission completedボタンに変更
 $(".submit").on("click", () => {
   $(".submit")
-    .animate({ width: "320px" }, 200)
+    .animate({ width: "320px" }, 250, "swing")
     .attr("value", "TRANSMISSION COMPLETED")
     .addClass("active");
 });

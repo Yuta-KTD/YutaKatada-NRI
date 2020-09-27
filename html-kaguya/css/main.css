@@ -439,6 +439,7 @@ main {
   width: 320px;
   height: 320px;
   position: absolute;
+  bottom: 0;
   display: none;
   opacity: 0.6;
 }
