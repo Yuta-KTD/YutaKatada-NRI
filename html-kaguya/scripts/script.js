@@ -1,16 +1,15 @@
 //初期化処理
-// ページ読み込みのフェードイン・フェードアウト
+// == ページ読み込みのフェードイン・フェードアウト ==
 // 各ページが読み込まれた時にはfadeoutクラスを削除
 // フェードイン動作はjQueryで実装
 // スマホサイズ時の送信ボタンの内容を変更
 $(window).on("load", () => {
-  $("body").removeClass("fadeout").hide().fadeIn(100);
+  $("body").removeClass("fadeout").hide().fadeIn(200);
   if (window.matchMedia("(max-width: 375px)").matches) {
     $(".submit").attr("value", "Send");
   }
 });
-//フェードアウト動作をCSSのtransitionを用いて実装
-
+// フェードアウト動作をCSSのtransitionを用いて実装
 $(".page-transition").on("click", (e) => {
   // preventDefaultでデフォルト動作をキャンセル
   e.preventDefault();
@@ -26,19 +25,19 @@ $(".page-transition").on("click", (e) => {
   return false;
 });
 
-// 商品ニュース画像ホバー時の動作
+// == 商品ニュース画像ホバー時の動作 ==
 $(".pickup-news li").on({
   mouseenter: (e) => {
     $(e.currentTarget).children("p").fadeIn(100).css("display", "content");
-    $(e.currentTarget).children("div").slideDown(100);
+    $(e.currentTarget).children("div").slideDown(200, "swing");
   },
   mouseleave: (e) => {
     $(e.currentTarget).children("p").fadeOut(100);
-    $(e.currentTarget).children("div").slideUp(100);
+    $(e.currentTarget).children("div").slideUp(200, "swing");
   },
 });
 
-// ==ハンバーガーメニュー== //
+// == ハンバーガーメニュー ==
 // ハンバーガーメニューのオンオフをactiveクラスの有無で判断する
 $(".navToggle").on("click", (e) => {
   const target = $(e.currentTarget);
@@ -57,7 +56,6 @@ $(".nav-toggle").on("click", () => {
 
 // ==CONTACTフォーム== //
 //sendボタン操作後、transmission completedボタンに変更
-
 $(".submit").on("click", () => {
   $(".submit")
     .animate({ width: "320px" }, 200)
